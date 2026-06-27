@@ -129,87 +129,71 @@ async function sendVerificationCode(
 
 function generateEmailTemplate(verificationCode) {
   return `
-    // <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; background-color: #f9f9f9;">
-    //   <h2 style="color: #4CAF50; text-align: center;">Verification Code</h2>
-    //   <p style="font-size: 16px; color: #333;">Dear User,</p>
-    //   <p style="font-size: 16px; color: #333;">Your verification code is:</p>
-    //   <div style="text-align: center; margin: 20px 0;">
-    //     <span style="display: inline-block; font-size: 24px; font-weight: bold; color: #4CAF50; padding: 10px 20px; border: 1px solid #4CAF50; border-radius: 5px; background-color: #e8f5e9;">
-    //       ${verificationCode}
-    //     </span>
-    //   </div>
-    //   <p style="font-size: 16px; color: #333;">Please use this code to verify your email address. The code will expire in 10 minutes.</p>
-    //   <p style="font-size: 16px; color: #333;">If you did not request this, please ignore this email.</p>
-    //   <footer style="margin-top: 20px; text-align: center; font-size: 14px; color: #999;">
-    //     <p>Thank you,<br>Your Company Team</p>
-    //     <p style="font-size: 12px; color: #aaa;">This is an automated message. Please do not reply to this email.</p>
-    //   </footer>
-    // </div>
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 25px; border: 1px solid #e0e0e0; border-radius: 10px; background-color: #ffffff;">
 
-  <div style="text-align:center; margin-bottom:20px;">
-    <h1 style="color:#222;">Fashion Zero</h1>
-  </div>
-
-  <h2 style="color:#4CAF50; text-align:center;">
-    Verify Your Email Address
-  </h2>
-
-  <p style="font-size:16px; color:#333;">
-    Hello,
-  </p>
-
-  <p style="font-size:16px; color:#333;">
-    Thank you for creating an account with <b>Fashion Zero</b>.
-    Please use the verification code below to complete your registration.
-  </p>
-
-  <div style="text-align:center; margin:25px 0;">
-    <span style="
-      display:inline-block;
-      font-size:28px;
-      font-weight:bold;
-      letter-spacing:5px;
-      color:#4CAF50;
-      padding:15px 25px;
-      border:2px solid #4CAF50;
-      border-radius:8px;
-      background-color:#f1fff1;">
-      ${verificationCode}
-    </span>
-  </div>
-
-  <p style="font-size:16px; color:#333;">
-    This verification code will expire in <b>10 minutes</b>.
-  </p>
-
-  <p style="font-size:16px; color:#333;">
-    If you did not create a Fashion Zero account, you can safely ignore this email.
-  </p>
-
-  <hr style="border:none; border-top:1px solid #eee; margin:25px 0;">
-
-  <footer style="text-align:center; font-size:14px; color:#777;">
-
-    <p>
-      Regards,<br>
-      <b>Fashion Zero Team</b>
-    </p>
-
-    <p>
-      <a href="https://fashionzero.in" 
-      style="color:#4CAF50; text-decoration:none;">
-      https://fashionzero.in
-      </a>
-    </p>
-
-    <p style="font-size:12px; color:#aaa;">
-      This is an automated email. Please do not reply directly to this message.
-    </p>
-
-  </footer>
-
-</div>
+      <div style="text-align:center; margin-bottom:20px;">
+        <h1 style="color:#222;">Fashion Zero</h1>
+      </div>
+    
+      <h2 style="color:#4CAF50; text-align:center;">
+        Verify Your Email Address
+      </h2>
+    
+      <p style="font-size:16px; color:#333;">
+        Hello,
+      </p>
+    
+      <p style="font-size:16px; color:#333;">
+        Thank you for creating an account with <b>Fashion Zero</b>.
+        Please use the verification code below to complete your registration.
+      </p>
+    
+      <div style="text-align:center; margin:25px 0;">
+        <span style="
+          display:inline-block;
+          font-size:28px;
+          font-weight:bold;
+          letter-spacing:5px;
+          color:#4CAF50;
+          padding:15px 25px;
+          border:2px solid #4CAF50;
+          border-radius:8px;
+          background-color:#f1fff1;">
+          ${verificationCode}
+        </span>
+      </div>
+    
+      <p style="font-size:16px; color:#333;">
+        This verification code will expire in <b>10 minutes</b>.
+      </p>
+    
+      <p style="font-size:16px; color:#333;">
+        If you did not create a Fashion Zero account, you can safely ignore this email.
+      </p>
+    
+      <hr style="border:none; border-top:1px solid #eee; margin:25px 0;">
+    
+      <footer style="text-align:center; font-size:14px; color:#777;">
+    
+        <p>
+          Regards,<br>
+          <b>Fashion Zero Team</b>
+        </p>
+    
+        <p>
+          <a href="https://fashionzero.in" 
+          style="color:#4CAF50; text-decoration:none;">
+          https://fashionzero.in
+          </a>
+        </p>
+    
+        <p style="font-size:12px; color:#aaa;">
+          This is an automated email. Please do not reply directly to this message.
+        </p>
+    
+      </footer>
+    
+    </div>
   `;
 }
 
