@@ -10,7 +10,7 @@ const ForgotPassword = () => {
 
   const handleForgotPassword=async(e)=>{
     e.preventDefault();
-    await axios.post("https://fashion-zero-server.onrender.com/api/v1/user/password/forgot",{email},{
+    await axios.post("https://api.fashionzero.in/api/v1/user/password/forgot",{email},{
       withCredentials: true,
       headers:{
         "Content-Type": "application/json",
