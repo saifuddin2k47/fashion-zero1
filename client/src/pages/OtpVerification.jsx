@@ -45,7 +45,7 @@ const OtpVerification = () => {
 
     try {
       const res = await axios.post(
-        "https://fashion-zero-server.onrender.com/api/v1/user/otp-verification",
+        "https://api.fashionzero.in/api/v1/user/otp-verification",
         data,
         {
           withCredentials: true,
